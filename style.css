@@ -1,0 +1,100 @@
+/* The style.css document declares rules (like color) for particular
+html elements (-> element selectors) */
+
+/* HTML/CSS Element selectors: type (h1...) id (assign the specific
+  type an id="headerxy" and then select that in style.css: #headerxy) */
+
+/* Class selectors: assign class="classxy" to a series of elements
+  and select them in style.css: .classxy */
+
+/* Select with span and div <> : span for inline, div for whole paragraphs
+  then select div or span in style.css (id and class selectors can be used 
+  in addition to div or span! */
+
+/* Relative width and height (by percent of the screen)
+    - vh for height e.g. 50 for 50 percent 
+    - vw for width */
+
+/* Calculation operations: calc(operation with spaces) */
+
+/* Fonts and font-families - font-stacks 
+-> suggestions in emmet with: control + spacebar
+font-family: */
+
+/* You can also use google fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,h3,li {
+  font-family: "League Spartan", sans-serif;
+  margin: 5px;
+}
+
+h3 {
+  border: 0px;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* CSS box model */
+/* Padding, border, margin, outline */
+
+/* Default Display property 
+  - Block: Always starts a new line and takes full width
+  - Inline: Does not start new line and takes up as much space as content space */
+
+
+.eins {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.zwei {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;
+}
+/* Inserting image as background */
