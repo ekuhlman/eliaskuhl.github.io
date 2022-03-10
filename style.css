@@ -22,79 +22,83 @@ html elements (-> element selectors) */
 font-family: */
 
 /* You can also use google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=League+Spartan:wght@100&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-p,h3,li {
-  font-family: "League Spartan", sans-serif;
-  margin: 5px;
-}
-
-h3 {
-  border: 0px;
-}
-
-/* Navbar */
-ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky;
-  top: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-li {
-  float: left;
+body {
+  background: rgb(201, 201, 201);
+  font-family: "Bitter", serif;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+.navMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: rgb(103, 103, 103);
   text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+.navMenu a:hover {
+  color: #191970;
 }
 
-/* CSS box model */
-/* Padding, border, margin, outline */
-
-/* Default Display property 
-  - Block: Always starts a new line and takes full width
-  - Inline: Does not start new line and takes up as much space as content space */
-
-
-.eins {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 60px;
-    text-decoration: none;
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #191970;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.zwei {
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 60px;
-    text-decoration: none;
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
-a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
-    color: black;
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(105px);
+  transform: translateX(105px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
-/* Inserting image as background */
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(187px);
+  transform: translateX(187px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(280px);
+  transform: translateX(280px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
