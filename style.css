@@ -22,83 +22,66 @@ html elements (-> element selectors) */
 font-family: */
 
 /* You can also use google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=League+Spartan:wght@100&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
-  background: rgb(201, 201, 201);
-  font-family: "Bitter", serif;
+  margin: 0;
 }
 
-.navMenu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+nav {
+  margin: 0;
+  overflow: hidden;
 }
 
-.navMenu a {
-  color: rgb(103, 103, 103);
+ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+  background-color: black;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li a {
   text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: 80px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  color: white;
+  padding: 20px 40px;
 }
 
-.navMenu a:hover {
-  color: #191970;
+li a:hover {
+  background-color: grey;
 }
 
-.navMenu .dot {
-  width: 6px;
-  height: 6px;
-  background: #191970;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+footer {
+  margin: 0;
+  background-color: grey;
+  padding: 3px;
+  border: 0;
 }
 
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(20px);
-  transform: translateX(20px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
+footer p {
+  color: white;
+  margin: 10px;
 }
 
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(105px);
-  transform: translateX(105px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
+.container {
+  width: 100vw;
+  height: 100vw;
 
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(187px);
-  transform: translateX(187px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
+  font-size: 20px;
 
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(280px);
-  transform: translateX(280px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  gap: 50px;
+
+  margin-left: 5px;
+
+  box-sizing: border-box;
+  overflow: hidden;
 }
