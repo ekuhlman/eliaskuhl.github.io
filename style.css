@@ -33,7 +33,7 @@ nav {
 
 ul {
   list-style-type: none;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   background-color: navy;
   text-align: center;
@@ -41,7 +41,7 @@ ul {
 
 li {
   display: inline;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -52,14 +52,19 @@ li a {
 }
 
 li a:hover {
-  background-color: grey;
+  background-color: rgb(0, 2, 100);
 }
 
 footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   margin: 0;
   background-color: grey;
   padding: 3px;
   border: 0;
+  text-align: center;
 }
 
 footer p {
@@ -71,7 +76,7 @@ footer p {
   width: 100vw;
   height: 100vw;
 
-  font-size: 20px;
+  font-size: 15px;
 
   display: grid;
 
@@ -81,6 +86,24 @@ footer p {
   gap: 50px;
 
   margin-left: 5px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.about-content {
+  width: 100vw;
+  height: 100vw;
+
+  font-size: 20px;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  gap: 50px;
+  margin: 5px;
 
   box-sizing: border-box;
   overflow: hidden;
