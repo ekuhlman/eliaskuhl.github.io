@@ -22,86 +22,51 @@ html elements (-> element selectors) */
 font-family: */
 
 /* You can also use google fonts */
-body {
-  margin: 0;
-}
 
-nav {
-  margin: 0;
-  overflow: hidden;
+h4 {
+  text-align: center;
 }
-
-ul {
-  list-style-type: none;
+  
+p {
+  text-align: justify;
+}
+  
+.links {
+  margin-right: 20px;
+}
+  
+.introduction-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 5px;
+  padding: 4px;
+}
+  
+.introduction-cardContent {
   padding: 10px;
+}
+
+/* Navbar */
+#nav {
+  list-style-type: none;
+  padding: 0.5em;
   margin: 0;
   background-color: navy;
   text-align: center;
 }
 
-li {
+#nav li {
   display: inline;
   font-size: 1em;
-  font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-li a {
+#nav li a {
   text-decoration: none;
-  color: white;
-  padding: 20px 40px;
+  color: whitesmoke;
+  padding: 1em;
 }
 
-li a:hover {
-  background-color: rgb(0, 2, 100);
-}
-
-footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  background-color: grey;
-  padding: 3px;
-  border: 0;
-  text-align: center;
-}
-
-footer p {
-  color: white;
-  margin: 10px;
-}
-
-.container {
-  width: 100vw;
-  height: 100vw;
-
-  font-size: 15px;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-
-  gap: 25px;
-
-  margin-left: 5px;
-}
-
-.about-content {
-  width: 100vw;
-  height: 100vw;
-
-  font-size: 20px;
-
-  display: grid;
-
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-
-  gap: 50px;
-  margin: 5px;
-
-  box-sizing: border-box;
-  overflow: hidden;
+/* Box-shadow for card-box */
+#card-box-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.13);
 }

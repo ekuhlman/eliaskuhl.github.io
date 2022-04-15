@@ -1,0 +1,32 @@
+.container {
+    /* Set the display type to flex(box): items are layed out automatically */
+    display: flex;
+    /* Set the wrap (no-wrap is default and makes items overflow) */
+    
+    /* Set the flex basis to auto to make the content adjust itself if the designated area is either too big or too small */
+    
+}
+
+nav {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5em;
+    margin: 0;
+    background-color: navy;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    font-size: 1em;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1em;
+}
