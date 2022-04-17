@@ -22,9 +22,30 @@ html elements (-> element selectors) */
 font-family: */
 
 /* You can also use google fonts */
+.card-container {
+  width: 100vw;
+  height: 100vw;
 
-body {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.introduction-card-container {
   display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+.app-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 h4 {
@@ -45,10 +66,6 @@ p {
   margin: 10px 5px;
   padding: 4px;
 }
-  
-.introduction-cardContent {
-  padding: 10px;
-}
 
 /* Navbar */
 #nav {
@@ -57,6 +74,7 @@ p {
   margin: 0;
   background-color: navy;
   text-align: center;
+  overflow: hidden;
 }
 
 #nav li {
@@ -68,34 +86,27 @@ p {
   text-decoration: none;
   color: whitesmoke;
   padding: 1em;
+  float: left;
+  display: block;
 }
 
 /* Box-shadow for card-box */
 #card-box-shadow {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 13px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
 }
 
-.tasks-card {
+.full-card {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 10px 5px;
   padding: 4px;
-  width: 50vw;
 }
 
-.task-card-content {
+.card-content {
   padding: 10px;
 }
 
-.groceries-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px 5px;
-  padding: 4px;
-  width: 50vw;
-}
-
-.groceries-card-content {
-  padding: 10px;
+.card-text {
+  display: inline;
 }
 
